@@ -1,0 +1,592 @@
+{
+  "collegeId": "rec-gonda",
+  "collegeName": "Rajkiya Engineering College, Gonda",
+  "collegeFullName": "Maa Pateshwari Devi Rajkiya Engineering College, Gonda",
+  "meta": {
+    "established": "2023",
+    "type": "Government",
+    "affiliation": "Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow",
+    "approvedBy": "AICTE, New Delhi",
+    "location": "Gonda, Uttar Pradesh",
+    "website": "https://recgonda.ac.in"
+  },
+
+  "branches": [
+    {
+      "id": "cse",
+      "name": "Computer Science & Engineering",
+      "seats": 75,
+      "uptac2025": {
+        "source": "UPTAC B.Tech. Counselling 2025 — Official OR-CR Data",
+        "sourceUrl": "https://uptac.admissions.nic.in/or-cr/",
+        "rounds": [
+          { "round": 1, "quota": "Home State", "category": "OPEN",      "seatGender": "Both",   "opening": 156672,  "closing": 330187  },
+          { "round": 1, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 270039,  "closing": 353818  },
+          { "round": 1, "quota": "Home State", "category": "OPEN(AF)",   "seatGender": "Both",   "opening": 1071173, "closing": 1071173 },
+          { "round": 1, "quota": "Home State", "category": "OPEN(TF)",   "seatGender": "Both",   "opening": 204501,  "closing": 225229  },
+          { "round": 1, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 331140,  "closing": 369712  },
+          { "round": 1, "quota": "Home State", "category": "EWS(GL)",    "seatGender": "Female", "opening": 368869,  "closing": 377130  },
+          { "round": 1, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 333555,  "closing": 376410  },
+          { "round": 1, "quota": "Home State", "category": "BC(Girl)",   "seatGender": "Female", "opening": 356868,  "closing": 364660  },
+          { "round": 1, "quota": "Home State", "category": "SC",         "seatGender": "Both",   "opening": 475554,  "closing": 631404  },
+          { "round": 1, "quota": "Home State", "category": "SC(Girl)",   "seatGender": "Female", "opening": 594413,  "closing": 1077520 },
+          { "round": 1, "quota": "Home State", "category": "ST",         "seatGender": "Both",   "opening": 891381,  "closing": 891381  },
+          { "round": 2, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 251630,  "closing": 469239  },
+          { "round": 2, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 363940,  "closing": 458279  },
+          { "round": 2, "quota": "Home State", "category": "OPEN(TF)",   "seatGender": "Both",   "opening": 277774,  "closing": 300926  },
+          { "round": 2, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 504955,  "closing": 536775  },
+          { "round": 2, "quota": "Home State", "category": "EWS(GL)",    "seatGender": "Female", "opening": 490321,  "closing": 526095  },
+          { "round": 2, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 471791,  "closing": 551428  },
+          { "round": 2, "quota": "Home State", "category": "BC(Girl)",   "seatGender": "Female", "opening": 486551,  "closing": 554604  },
+          { "round": 2, "quota": "Home State", "category": "SC",         "seatGender": "Both",   "opening": 570889,  "closing": 1139777 },
+          { "round": 3, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 406065,  "closing": 555882  },
+          { "round": 3, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 474826,  "closing": 497815  },
+          { "round": 3, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 592917,  "closing": 676386  },
+          { "round": 3, "quota": "Home State", "category": "EWS(GL)",    "seatGender": "Female", "opening": 505327,  "closing": 556186  },
+          { "round": 3, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 557451,  "closing": 687396  },
+          { "round": 3, "quota": "Home State", "category": "BC(Girl)",   "seatGender": "Female", "opening": 610351,  "closing": 692514  },
+          { "round": 3, "quota": "Home State", "category": "SC",         "seatGender": "Both",   "opening": 639743,  "closing": 1386774 },
+          { "round": 4, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 557451,  "closing": 592917  },
+          { "round": 4, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 709823,  "closing": 719560  },
+          { "round": 4, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 691604,  "closing": 815714  },
+          { "round": 4, "quota": "Home State", "category": "BC(Girl)",   "seatGender": "Female", "opening": 828476,  "closing": 828476  },
+          { "round": 6, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 402310,  "closing": 778205  },
+          { "round": 7, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 305704,  "closing": 308639  }
+        ]
+      },
+      "review": {
+        "labStatus": "Computer labs are functional with desktops available. Having your own laptop is highly recommended for serious development work.",
+        "facultyRating": "Currently limited faculty. More faculties are expected to join. Self-learning is key.",
+        "scope": "Strong scope if you invest in self-learning. DSA, web development, and open-source contributions will matter more than your classroom grades.",
+        "placementNote": "This is a new government college. MOUs have been signed with Govt Polytechnic Gonda and Balrampur for placement drives. Build your own skills — your future is in your hands."
+      }
+    },
+    {
+      "id": "ee",
+      "name": "Electrical Engineering",
+      "seats": 75,
+      "uptac2025": {
+        "source": "UPTAC B.Tech. Counselling 2025 — Official OR-CR Data",
+        "sourceUrl": "https://uptac.admissions.nic.in/or-cr/",
+        "rounds": [
+          { "round": 1, "quota": "Home State", "category": "OPEN",      "seatGender": "Both",   "opening": 482939,  "closing": 860167  },
+          { "round": 1, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 342905,  "closing": 1042877 },
+          { "round": 1, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 895024,  "closing": 1118584 },
+          { "round": 1, "quota": "Home State", "category": "EWS(GL)",    "seatGender": "Female", "opening": 1050197, "closing": 1050197 },
+          { "round": 1, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 899323,  "closing": 1078731 },
+          { "round": 1, "quota": "Home State", "category": "SC",         "seatGender": "Both",   "opening": 962923,  "closing": 962923  },
+          { "round": 2, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 328078,  "closing": 1436015 },
+          { "round": 6, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 804098,  "closing": 1743877 },
+          { "round": 7, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 2101315, "closing": 2101315 }
+        ]
+      },
+      "review": {
+        "labStatus": "Electrical labs are equipped with standard equipment for practicals. Adequate for curriculum requirements.",
+        "facultyRating": "Dedicated faculty with good knowledge. Core subjects are well covered.",
+        "scope": "Excellent for GATE aspirants and government job preparation. Core electrical roles in PSUs, railways, and state electricity boards.",
+        "placementNote": "This is a new government college. MOUs have been signed with Govt Polytechnic Gonda and Govt Polytechnic Balrampur for placement drives. GATE + PSU route is the most rewarding career path from this branch."
+      }
+    },
+    {
+      "id": "me",
+      "name": "Mechanical Engineering",
+      "seats": 75,
+      "uptac2025": {
+        "source": "UPTAC B.Tech. Counselling 2025 — Official OR-CR Data",
+        "sourceUrl": "https://uptac.admissions.nic.in/or-cr/",
+        "rounds": [
+          { "round": 1, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 251630,  "closing": 1019654 },
+          { "round": 1, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 500686,  "closing": 1427506 },
+          { "round": 1, "quota": "Home State", "category": "EWS(OPEN)",  "seatGender": "Both",   "opening": 1168654, "closing": 1168654 },
+          { "round": 1, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 1288567, "closing": 1457825 },
+          { "round": 1, "quota": "Home State", "category": "SC",         "seatGender": "Both",   "opening": 1137907, "closing": 1223201 },
+          { "round": 2, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 569899,  "closing": 1425134 },
+          { "round": 3, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 930341,  "closing": 1029981 },
+          { "round": 6, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 2018820, "closing": 2018820 },
+          { "round": 7, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 1792517, "closing": 1792517 }
+        ]
+      },
+      "review": {
+        "labStatus": "Workshop and mechanical labs have basic equipment. Sufficient for curriculum practicals.",
+        "facultyRating": "Supportive faculty, especially for practical subjects and workshop training.",
+        "scope": "Good for GATE, government exams (SSC JE, RRB JE), and manufacturing sector roles. CAD/CAM skills are a plus.",
+        "placementNote": "This is a new government college. MOUs have been signed with Govt Polytechnic Gonda and Govt Polytechnic Balrampur for placement drives. GATE, SSC JE, RRB JE preparation is the most reliable path from this branch."
+      }
+    },
+    {
+      "id": "ce",
+      "name": "Civil Engineering",
+      "seats": 75,
+      "uptac2025": {
+        "source": "UPTAC B.Tech. Counselling 2025 — Official OR-CR Data",
+        "sourceUrl": "https://uptac.admissions.nic.in/or-cr/",
+        "rounds": [
+          { "round": 1, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 384610,  "closing": 1196963 },
+          { "round": 1, "quota": "Home State", "category": "OPEN(GIRL)", "seatGender": "Female", "opening": 1438039, "closing": 1438039 },
+          { "round": 1, "quota": "Home State", "category": "BC",         "seatGender": "Both",   "opening": 1362926, "closing": 1437487 },
+          { "round": 2, "quota": "Home State", "category": "OPEN",       "seatGender": "Both",   "opening": 492359,  "closing": 492359  },
+          { "round": 6, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 1699058, "closing": 1792723 },
+          { "round": 7, "quota": "All India",  "category": "OPEN",       "seatGender": "Both",   "opening": 914732,  "closing": 2100732 }
+        ]
+      },
+      "review": {
+        "labStatus": "Surveying equipment and material testing labs are available. Field visits are part of the curriculum.",
+        "facultyRating": "Experienced faculty with practical knowledge. Good guidance for competitive exam preparation.",
+        "scope": "Strong path towards government jobs — SSC JE, RRB JE, State PWD, UPPSC AE. GATE score opens PSU doors.",
+        "placementNote": "This is a new government college. MOUs have been signed with Govt Polytechnic Gonda and Govt Polytechnic Balrampur for placement drives. Government jobs via SSC JE, RRB JE, UPPSC AE, and GATE are the strongest career routes from Civil Engineering."
+      }
+    }
+  ],
+
+  "feeStructure": {
+    "note": "Fees are approximate and subject to change. Verify from official college notice.",
+    "feecircularUrl": "https://recgonda.ac.in",
+    "components": {
+      "collegeFee": 40000,
+      "userCharges": 12300,
+      "cautionMoney": 5000,
+      "hostelFee": 10000,
+      "hostelCaution": 1000,
+      "aktuFees": 7500
+    },
+    "totalWithoutHostel": 59800,
+    "totalWithHostel": 70800,
+    "scholarship": {
+      "GEN_MALE": {
+        "eligible": true,
+        "label": "General — Boys",
+        "incomeLimit": null,
+        "amount": 58000,
+        "note": "UP Govt scholarship for General category boys",
+        "effectiveCost": 1800
+      },
+      "GEN_FEMALE": {
+        "eligible": true,
+        "label": "General — Girls",
+        "incomeLimit": null,
+        "amount": 63000,
+        "note": "UP Govt scholarship for General category girls",
+        "effectiveCost": 0
+      },
+      "OBC_MALE": {
+        "eligible": true,
+        "label": "OBC — Boys",
+        "incomeLimit": 200000,
+        "amount": 53000,
+        "note": "UP Govt scholarship for OBC boys (income ≤ ₹2L)",
+        "effectiveCost": 6800
+      },
+      "OBC_FEMALE": {
+        "eligible": true,
+        "label": "OBC — Girls",
+        "incomeLimit": 200000,
+        "amount": 58000,
+        "note": "UP Govt scholarship for OBC girls (income ≤ ₹2L)",
+        "effectiveCost": 1800
+      },
+      "SC_MALE": {
+        "eligible": true,
+        "label": "SC — Boys",
+        "incomeLimit": 250000,
+        "amount": 66000,
+        "note": "UP Govt scholarship for SC boys (income ≤ ₹2.5L)",
+        "effectiveCost": 0
+      },
+      "SC_FEMALE": {
+        "eligible": true,
+        "label": "SC — Girls",
+        "incomeLimit": 250000,
+        "amount": 71000,
+        "note": "UP Govt scholarship for SC girls (income ≤ ₹2.5L)",
+        "effectiveCost": 0
+      },
+      "ST_MALE": {
+        "eligible": true,
+        "label": "ST — Boys",
+        "incomeLimit": 250000,
+        "amount": 66000,
+        "note": "UP Govt scholarship for ST boys (income ≤ ₹2.5L)",
+        "effectiveCost": 0
+      },
+      "EWS_MALE": {
+        "eligible": true,
+        "label": "EWS — Boys",
+        "incomeLimit": 800000,
+        "amount": 58000,
+        "note": "EWS scholarship (income ≤ ₹8L)",
+        "effectiveCost": 1800
+      },
+      "EWS_FEMALE": {
+        "eligible": true,
+        "label": "EWS — Girls",
+        "incomeLimit": 800000,
+        "amount": 63000,
+        "note": "EWS scholarship (income ≤ ₹8L)",
+        "effectiveCost": 0
+      }
+    }
+  },
+
+  "monthlyBudget": {
+    "rent": {
+      "min": 1000, "max": 2000,
+      "note": "Single room: ₹1,500–₹2,000/month | Double/Triple occupancy: ₹1,000–₹1,500/person. Rooms available in Bhabhani Gaon (behind college), near Navin Sabzi Mandi, Indira Nagar Colony, or Avas Vikas Colony."
+    },
+    "food": {
+      "min": 1500, "max": 3500,
+      "note": "₹50/meal at college mess or Polytechnic mess (11 AM–1 PM, 7 PM–9 PM). Monthly mess from local homes in Bhabhani Gaon. You can also cook yourself in your room — saves the most money."
+    },
+    "transport": {
+      "min": 200, "max": 600,
+      "note": "Auto fare is mostly ₹10 within nearby areas. To Gonda Bus Stand or Railway Station: ₹20 per person. You won't need daily travel if you stay close to college."
+    },
+    "internet": {
+      "min": 200, "max": 400,
+      "note": "Airtel 5G recommended — Jio is unreliable here. ₹200–₹400/month for a solid plan."
+    },
+    "miscellaneous": {
+      "min": 300, "max": 1000,
+      "note": "Stationery, printing, personal expenses"
+    }
+  },
+
+  "fitGuide": {
+    "bestSuitedFor": [
+      "Students looking for an affordable government engineering degree in UP",
+      "GATE / Government exam aspirants who want a distraction-free environment and ample study time",
+      "Self-driven developers who can learn independently alongside their degree",
+      "Students from eastern UP who prefer staying closer to home",
+      "Budget-conscious families — UP scholarship significantly reduces the cost"
+    ],
+    "considerAlternativesIf": [
+      "Campus placement in top MNCs is your primary expectation — explore colleges with established placement cells",
+      "You prefer a metro city campus experience with corporate exposure",
+      "You want a large, active peer community for hackathons and tech events — consider colleges in Lucknow/Noida",
+      "You're looking for a wide variety of elective specializations or interdisciplinary programs"
+    ]
+  },
+
+  "campusLifeGuide": [
+    {
+      "icon": "",
+      "factor": "Accommodation",
+      "info": "Girls' hostel is available on campus (Fee: ₹10,000/year). Boys need to rent rooms outside.",
+      "proTip": "Rooms in Bhabhani village (behind college), Navin Sabzi Mandi, Indira Nagar Colony, or Avas Vikas Colony. Single room: ₹1,500–₹2,000/month. Double/Triple occupancy: ₹1,000–₹1,500/person.",
+      "costRange": "₹1,000 – ₹2,000/month"
+    },
+    {
+      "icon": "",
+      "factor": "Transport & Connectivity",
+      "info": "College is right beside Govt Polytechnic Gonda. Tell auto drivers 'Govt Polytechnic' — they know it well.",
+      "proTip": "Auto fare within nearby areas is mainly ₹10. To Gonda Bus Stand or Railway Station it's ₹20 per person. Services reduce in the evening, so plan accordingly.",
+      "costRange": "₹10–₹20 per ride"
+    },
+    {
+      "icon": "",
+      "factor": "Food & Meals",
+      "info": "₹50 per meal at the college mess or Polytechnic mess (open 11 AM–1 PM & 7 PM–9 PM). Monthly mess available from local homes in Bhabhani Gaon.",
+      "proTip": "Best option is college/polytechnic mess for freshers. Once settled, many students cook in their rooms — cheapest option. You have full flexibility.",
+      "costRange": "₹50/meal or monthly mess"
+    },
+    {
+      "icon": "",
+      "factor": "Internet & WiFi",
+      "info": "Jio is not reliable here, but Airtel 5G works perfectly. College Wi-Fi gives great speed when it's running.",
+      "proTip": "Get an Airtel SIM before coming. College Wi-Fi is good but may be off during holidays.",
+      "costRange": "₹200 – ₹400/month"
+    },
+    {
+      "icon": "",
+      "factor": "Library & Study Spaces",
+      "info": "The college library has a growing collection of textbooks and reference materials. Quiet study environment is available.",
+      "proTip": "Library has a decent seating area. If your room gets noisy, use this space for focused study and completing assignments.",
+      "costRange": "Free"
+    },
+    {
+      "icon": "",
+      "factor": "Medical & Emergency",
+      "info": "Basic medical facilities are available nearby. Gonda District Hospital is accessible for emergencies.",
+      "proTip": "Keep a basic first-aid kit in your room. Paracetamol, ORS, band-aids go a long way.",
+      "costRange": "As needed"
+    }
+  ],
+
+  "sports": [
+    { "name": "Cricket",       "level": "Intercollegiate", "note": "Most popular sport on campus" },
+    { "name": "Football",      "level": "Intercollegiate", "note": "Regular matches on college grounds" },
+    { "name": "Volleyball",    "level": "Intercollegiate", "note": "Played in the college courtyard" },
+    { "name": "Badminton",     "level": "Intra-college",   "note": "Available indoors" },
+    { "name": "Kabaddi",       "level": "Intercollegiate", "note": "" },
+    { "name": "Table Tennis",  "level": "Intra-college",   "note": "Available in Campus" },
+    { "name": "Chess",         "level": "Intra-college",   "note": "Organized by Literary Council" },
+    { "name": "Kho-Kho",       "level": "Intercollegiate", "note": "Played regularly" }
+  ],
+
+  "galleryVideos": [
+    {
+      "id": "O3pznnVKw-I",
+      "title": "REC Gonda — Full Campus Vlog",
+      "description": "Complete walkthrough of the campus, buildings, labs, and surroundings"
+    },
+    {
+      "id": "wPedSv1Tt7E",
+      "title": "College Tour — MPDREC Gonda",
+      "description": "Student-shot tour covering key facilities and daily college life"
+    },
+    {
+      "id": "3aDU8UwU-Io",
+      "title": "REC Gonda Honest Review",
+      "description": "Honest review covering faculty, hostel, and what to expect as a fresher"
+    }
+  ],
+
+  "placementData": {
+    "overview": "MPDREC Gonda is a newly established government college (2023). As a Rajkiya Engineering College under AKTU, it follows the same academic framework as other government engineering colleges in UP. Formal campus placements are yet to begin, but MOUs have been signed with Govt Polytechnic Gonda and Govt Polytechnic Balrampur for placement drives. The government college tag gives credibility — your skills and preparation will determine your outcome.",
+    "onCampus": {
+      "status": "In Development — MOUs signed with Govt Polytechnic Gonda & Balrampur.",
+      "companiesVisited": ["N/A yet"],
+      "avgPackage": "N/A yet",
+      "note": "As a new government college, formal campus placement drives are in early stage. This is expected to improve as the college grows."
+    },
+    "offCampus": {
+      "status": "Best route right now.",
+      "platforms": ["LinkedIn", "Internshala", "Naukri", "AngelList", "Unstop"],
+      "avgPackage": "Depends entirely on your skills",
+      "note": "Jitna mehnat karoge utna fayda milega. Government college ka tag + strong skills = solid career."
+    },
+    "tips": [
+      "Start building your LinkedIn profile from 1st year",
+      "Complete at least 2-3 solid projects and host them on GitHub",
+      "Practice DSA consistently — platforms like LeetCode, GFG, CodeChef",
+      "Apply for internships from 2nd year onwards via Internshala and LinkedIn",
+      "Attend off-campus hiring drives — TCS NQT, Infosys InfyTQ, Wipro NLTH",
+      "GATE preparation opens doors to PSUs and M.Tech at IITs/NITs"
+    ]
+  },
+
+  "firstWeekKit": {
+    "documents": [],
+    "essentials": [
+      "Bedding — mattress, pillow, bed sheet, blanket",
+      "Bucket, mug, and toiletries",
+      "Lock and key (for room/hostel)",
+      "Extension board / power strip (4-6 sockets)",
+      "Laptop + charger (essential for CSE, helpful for all)",
+      "Notebook + stationery (basic set is enough initially)",
+      "Water bottle and a basic lunch box",
+      "Umbrella / Raincoat (monsoon season)",
+      "Basic medicines — Paracetamol, Crocin, band-aids, ORS",
+      "Your favorite snacks for the first few days "
+    ],
+    "day1Tips": [
+      "Reach early — registration counters can get crowded",
+      "Keep all documents in a single folder, organized in order",
+      "Carry original documents + photocopies separately",
+      "Fee payment will likely be via Demand Draft — check the admission letter",
+      "After registration, explore the campus and locate your department, library",
+      "Connect with seniors — they'll help you find rooms and settle in",
+      "Join your branch WhatsApp group (ask seniors for the link)"
+    ]
+  },
+
+  "counselingDocChecklist": {
+    "mandatory": [
+      { "doc": "JEE Main Scorecard", "tip": "Download from NTA website. Keep both digital and printed copies." },
+      { "doc": "UPTAC Allotment Letter", "tip": "Print immediately after allotment. Don't rely on just a screenshot." },
+      { "doc": "Class 10th Marksheet & Certificate", "tip": "Original is MUST. College may retain it temporarily." },
+      { "doc": "Class 12th Marksheet & Certificate", "tip": "If board results are recent, provisional certificate works initially." },
+      { "doc": "Transfer Certificate (TC)", "tip": "Get it from your school/previous college BEFORE coming." },
+      { "doc": "Character Certificate", "tip": "From your previous institution, dated within last 6 months." },
+      { "doc": "Domicile Certificate", "tip": "UP domicile is required for state quota seats. Apply at tehsil/SDM office." },
+      { "doc": "Aadhaar Card", "tip": "Must match your name exactly as in other documents." },
+      { "doc": "Passport-size Photos", "tip": "White background, 20+ copies. Get them clicked before you leave home." },
+      { "doc": "Anti-Ragging Affidavit", "tip": "Fill online at antiragging.in — both student and parent signatures needed." }
+    ],
+    "categorySpecific": [
+      { "doc": "Caste Certificate", "tip": "Required for SC/ST/OBC. Must be issued by a competent authority (SDM/DM).", "for": "SC/ST/OBC" },
+      { "doc": "Income Certificate", "tip": "Required for scholarship. Latest year, issued by tehsildar. Family income limit: SC/ST ≤ ₹2.5L, OBC ≤ ₹2L.", "for": "SC/ST/OBC/EWS" },
+      { "doc": "EWS Certificate", "tip": "Issued by SDM/Tehsildar. Family income must be below ₹8 LPA.", "for": "EWS" },
+      { "doc": "Non-Creamy Layer Certificate", "tip": "Required for OBC category. Valid for 1 year from issue date.", "for": "OBC" }
+    ],
+    "proTips": [
+      "Make 3 sets of photocopies of EVERYTHING before leaving home",
+      "Self-attest all photocopies (sign on each copy)",
+      "Keep originals and copies in SEPARATE folders",
+      "Carry a stapler and glue stick — you'll need them at the counter",
+      "If any document has a name mismatch, contact the college authorities for guidance"
+    ]
+  },
+
+  "howToReach": {
+    "nearestRailway": "Gonda Junction (Station Code: GD)",
+    "nearestBus": "Gonda Bus Stand (UP Roadways)",
+    "fromStation": {
+      "distance": "Beside Govt Polytechnic Gonda, Gonda",
+      "mode": "Shared auto — tell them 'Govt Polytechnic Gonda'",
+      "autoFareLocal": "₹10 for nearby areas",
+      "autoFareStation": "₹20 from Gonda Bus Stand or Railway Station",
+      "time": "20-30 minutes depending on traffic"
+    },
+    "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Maa+Pateshwari+Devi+Rajkiya+Engineering+College,+Gonda",
+    "nearbyEssentials": [
+      { "type": "ATM", "name": "SBI ATM, PNB ATM", "distance": "Within 2-3 km" },
+      { "type": "Hospital", "name": "Gonda District Hospital", "distance": "In Gonda city" },
+      { "type": "Medical Store", "name": "Multiple pharmacies on main road", "distance": "1-2 km" },
+      { "type": "Food / Restaurant", "name": "Dhabas and restaurants near bypass", "distance": "500m - 1km" },
+      { "type": "General Store", "name": "Kirana shops for daily needs", "distance": "500m - 1km" }
+    ]
+  },
+
+  "aktuExamSystem": {
+    "overview": "AKTU follows a semester system. Odd semester runs from August to December (exams December–January), and Even semester runs from February to May (exams May–June, both theory and practicals). Understanding this early helps you plan better from day one.",
+    "examPattern": {
+      "theory": {
+        "maxMarks": 100,
+        "internal": 30,
+        "external": 70,
+        "passingExternal": 21,
+        "note": "You need to pass both internal and external SEPARATELY."
+      }
+    },
+    "internalMarks": {
+      "breakdown": "Internal marks (30 total) are based on: Class tests (20 marks each — average of tests will be taken), assignments, behaviour, and attendance. There is no fixed formula disclosed — faculty has discretion on the final internal marks based on overall performance.",
+      "total": 30
+    },
+    "attendance": {
+      "minimum": "75%",
+      "consequence": "Below 75% attendance = debarred from Class Test (CTS) for that subject",
+      "tip": "Track your attendance from Week 1. It is important to maintain the minimum threshold to avoid issues in exams."
+    },
+    "carryBackPaper": {
+      "carry": "If you fail a subject, it becomes a 'carry' paper. You can attempt it in the next corresponding semester exam.",
+      "tip": "Clear every subject in the first attempt. Carry papers pile up fast and become a mental burden. If you're struggling, get help from seniors or YouTube BEFORE the exam."
+    },
+    "grading": {
+      "scale": [
+        { "grade": "A+", "range": "90-100", "point": 10 },
+        { "grade": "A",  "range": "80-89",  "point": 9  },
+        { "grade": "B+", "range": "70-79",  "point": 8  },
+        { "grade": "B",  "range": "60-69",  "point": 7  },
+        { "grade": "C+", "range": "50-59",  "point": 6  },
+        { "grade": "C",  "range": "45-49",  "point": 5  },
+        { "grade": "D",  "range": "33-44",  "point": 4  },
+        { "grade": "F",  "range": "Below 33","point": 0  }
+      ],
+      "sgpaFormula": "SGPA = Σ(Credit × Grade Point) / Σ(Credits)",
+      "cgpaFormula": "CGPA = Average of all semester SGPAs (weighted by credits)"
+    },
+    "howCollegeWorks": {
+      "academicCalendar": "Odd Semester: August–December | Exams: December–January | Even Semester: February–May | Exams: May–June (Theory + Practicals)",
+      "classTimings": "Usually 9:00 AM to 4:00 PM with lunch break",
+      "importantThings": [
+        "ERP Portal (AKTU One View) — Check results, download admit cards, and enrollment details. Use it from Day 1.",
+        "UP Scholarship Portal — Apply on scholarship.up.gov.in as per official UP Govt deadlines (check the portal for exact dates each year).",
+        "Sessional exams are NOT optional — They directly impact your final internal marks",
+        "Lab files/records — Keep them updated regularly. Completing them at the last moment is stressful and affects your performance",
+        "Library — Use it for reference books and focused study. Return books on time if borrowed."
+      ]
+    }
+  },
+
+  "comparison": {
+    "colleges": [
+      {
+        "name": "REC Gonda",
+        "type": "Government",
+        "established": "2023",
+        "fees": "₹59,800/year",
+        "branches": 4,
+        "hostel": "Girls Only",
+        "location": "Gonda (Semi-urban)",
+        "placement": "Developing",
+        "scholarshipFriendly": "Yes",
+        "bestFor": "Budget-friendly, GATE prep, peaceful environment"
+      },
+      {
+        "name": "GEC Basti",
+        "type": "Government",
+        "established": "2021",
+        "fees": "₹55,000-65,000/year",
+        "branches": 4,
+        "hostel": "Limited",
+        "location": "Basti (Semi-urban)",
+        "placement": "Developing",
+        "scholarshipFriendly": "Yes",
+        "bestFor": "Similar profile to REC Gonda"
+      },
+      {
+        "name": "KNIT Sultanpur",
+        "type": "Government",
+        "established": "1977",
+        "fees": "₹70,000-90,000/year",
+        "branches": 7,
+        "hostel": "Available",
+        "location": "Sultanpur",
+        "placement": "Established",
+        "scholarshipFriendly": "Yes",
+        "bestFor": "Better placements, established alumni network"
+      }
+    ]
+  },
+
+  "importantDates": {
+    "note": "Dates are indicative based on previous years. Always check UPTAC official website for current year dates.",
+    "events": [
+      { "event": "JEE Main Results", "date": "April–June", "icon": "" },
+      { "event": "UPTAC Registration Opens", "date": "June–July", "icon": "" },
+      { "event": "Choice Filling Window", "date": "July", "icon": "" },
+      { "event": "Round 1 Seat Allotment", "date": "July–August", "icon": "" },
+      { "event": "Document Verification & Fee Payment", "date": "After each round", "icon": "" },
+      { "event": "Round 2 / Round 3 Allotment", "date": "August", "icon": "" },
+      { "event": "Spot Round (if any)", "date": "August–September", "icon": "" },
+      { "event": "Classes Begin (Odd Semester)", "date": "August", "icon": "" },
+      { "event": "UP Scholarship Application — Check scholarship.up.gov.in for exact dates", "date": "As per UP Govt portal", "icon": "" },
+      { "event": "Sessional Exams (Odd Sem)", "date": "October–November", "icon": "" },
+      { "event": "End Semester Exam (Odd)", "date": "December–January", "icon": "" },
+      { "event": "Even Semester Begins", "date": "February", "icon": "" },
+      { "event": "Sessional Exams (Even Sem)", "date": "March–April", "icon": "" },
+      { "event": "End Semester Exam (Even)", "date": "May–June", "icon": "" }
+    ]
+  },
+
+  "usefulLinks": [
+    { "name": "AKTU Official Website", "url": "https://aktu.ac.in", "category": "University", "icon": "" },
+    { "name": "AKTU One View (ERP)", "url": "https://erp.aktu.ac.in", "category": "University", "icon": "" },
+    { "name": "AKTU Results", "url": "https://result.aktu.ac.in", "category": "University", "icon": "" },
+    { "name": "UPTAC Counseling Portal", "url": "https://uptac.admissions.nic.in", "category": "Admissions", "icon": "" },
+    { "name": "UPTAC OR-CR Data (2025)", "url": "https://uptac.admissions.nic.in/or-cr/", "category": "Admissions", "icon": "" },
+    { "name": "REC Gonda Official Website", "url": "https://recgonda.ac.in", "category": "College", "icon": "" },
+    { "name": "UP Scholarship Portal", "url": "https://scholarship.up.gov.in", "category": "Scholarship", "icon": "" },
+    { "name": "Anti-Ragging Affidavit", "url": "https://antiragging.in", "category": "Admissions", "icon": "" },
+    { "name": "AKTU Previous Year Papers", "url": "https://aktu.ac.in/question-papers.html", "category": "Academics", "icon": "" },
+    { "name": "GATE Official Website", "url": "https://gate2026.iisc.ac.in", "category": "Competitive Exams", "icon": "" },
+    { "name": "LeetCode", "url": "https://leetcode.com", "category": "Skill Building", "icon": "" },
+    { "name": "GeeksforGeeks", "url": "https://geeksforgeeks.org", "category": "Skill Building", "icon": "" },
+    { "name": "Internshala", "url": "https://internshala.com", "category": "Career", "icon": "" }
+  ],
+
+  "roiComparison": {
+    "recGonda": {
+      "yearlyFees": 59800,
+      "monthlyLivingMin": 3200,
+      "monthlyLivingMax": 7500,
+      "yearlyLivingMin": 38400,
+      "yearlyLivingMax": 90000,
+      "yearlyTotalMin": 98200,
+      "yearlyTotalMax": 149800,
+      "fourYearTotalMin": 392800,
+      "fourYearTotalMax": 599200
+    },
+    "metroPrivateCollege": {
+      "name": "Typical Private College (Noida/Greater Noida)",
+      "yearlyFees": 180000,
+      "monthlyLiving": 15000,
+      "yearlyLiving": 180000,
+      "yearlyTotal": 360000,
+      "fourYearTotal": 1440000
+    },
+    "savings": {
+      "note": "Living costs vary greatly — depends on your lifestyle, room type, and food habits. The above ranges reflect realistic student spending. A lower cost means lower financial risk while you build skills that matter."
+    }
+  }
+}

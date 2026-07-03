@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>InsideREC — Everything about REC Gonda, straight from a student</title>
+  <meta name="description" content="InsideREC is the complete, student-written guide to Maa Pateshwari Devi Rajkiya Engineering College, Gonda. Rank predictor, real fee breakdown, campus life, placement facts, and AKTU decoded.">
+  <meta name="keywords" content="REC, REC Gonda, MPDREC Gonda, MPDREC, Rajkiya Engineering College Gonda, InsideREC, AKTU college guide, rank predictor Gonda, engineering college Gonda UP, UPTAC counseling, REC Gonda admission, Gonda engineering college, REC Gonda fees, REC Gonda placements, REC Gonda CSE, REC Gonda review, Maa Pateshwari Devi REC, REC AKTU, UP engineering college guide">
+  <meta name="author" content="Aditya Raj, CSE 3rd Year, REC Gonda">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://insiderec.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://insiderec.vercel.app/">
+  <meta property="og:title" content="InsideREC — The Complete REC Gonda Student Guide">
+  <meta property="og:description" content="Rank predictor, real fee breakdown, campus life, placement reality and AKTU decoded. Written by a student, for students.">
+  <meta property="og:image" content="https://insiderec.vercel.app/data/logo.png">
+  <meta property="og:site_name" content="InsideREC">
+  <meta property="og:locale" content="en_IN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InsideREC — The Complete REC Gonda Student Guide">
+  <meta name="twitter:description" content="Rank predictor, real fee breakdown, campus life, placement reality and AKTU decoded. Written by a student, for students.">
+  <meta name="twitter:image" content="https://insiderec.vercel.app/data/logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Maa Pateshwari Devi Rajkiya Engineering College, Gonda",
+    "alternateName": "REC Gonda",
+    "url": "https://insiderec.vercel.app/",
+    "logo": "https://insiderec.vercel.app/data/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gonda",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "description": "Government engineering college affiliated to Dr. APJ Abdul Kalam Technical University (AKTU), Lucknow. Ranked 7th in UP under SIRF 2024."
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data/logo.png">
+</head>
+<body>
+
+    <section id="landing" style="display:none;">
+    <div class="landing-content">
+      <div class="landing-badge">insiderec / v2.0</div>
+      <h1 class="landing-title">
+        Everything about <span class="gradient-text">REC</span>, straight from a student.
+      </h1>
+      <p class="landing-desc">
+        Rank predictor, real costs, campus life — honest, data-driven insights by a real student.
+      </p>
+      <div class="college-selector-card">
+        <label class="college-selector-label" for="college-select">Select Your College</label>
+        <select id="college-select" class="college-select">
+          <option value="" disabled selected>Choose a college...</option>
+        </select>
+        <button id="btn-explore" class="btn-explore" disabled>
+          Open Guide
+        </button>
+      </div>
+    </div>
+  </section>
+
+    <nav class="main-nav" id="main-nav">
+    <div class="nav-inner">
+      <div class="nav-brand">Inside<span>REC</span></div>
+      <div class="nav-links" id="nav-links">
+        <a href="#rank-predictor" class="nav-link">Predictor</a>
+        <a href="#how-college-works" class="nav-link">College Life</a>
+        <a href="#fee-calculator" class="nav-link">Fees</a>
+        <a href="#budget-planner" class="nav-link">Budget</a>
+        <a href="#fit-guide" class="nav-link">Fit Guide</a>
+        <a href="#campus-life" class="nav-link">Campus Life</a>
+        <a href="#branches" class="nav-link">Branches</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#placements" class="nav-link">Placements</a>
+        <a href="#first-week" class="nav-link">First Week</a>
+        <a href="#documents" class="nav-link">Documents</a>
+        <a href="#how-to-reach" class="nav-link">Reach</a>
+        <a href="#aktu-decoded" class="nav-link">AKTU</a>
+        <a href="#comparison" class="nav-link">Compare</a>
+        <a href="#dates" class="nav-link">Dates</a>
+        <a href="#links" class="nav-link">Links</a>
+        <a href="#roi" class="nav-link">ROI</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+          <span class="theme-toggle-icon">Dark</span>
+          <span id="theme-toggle-label">Mode</span>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="credit-bar" id="credit-bar">
+    by <strong>Aditya</strong> · CSE, 2nd Year · open-source framework
+  </div>
+
+    <main id="main-content">
+
+        <section class="section" id="college-header" style="padding-top: calc(var(--nav-height) + 40px); padding-bottom: var(--space-8);">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h1 id="college-name-display" class="section-title" style="font-size: var(--text-4xl);"></h1>
+          <div class="college-info-bar" id="college-info-bar"></div>
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="rank-predictor">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// predictor</span>
+          <h2 class="section-title">Rank-to-Seat Predictor</h2>
+          <p class="section-subtitle">Enter your JEE Main rank and find out your chances instantly</p>
+        </div>
+        <div class="achievement-banner fade-in" style="max-width: 700px; margin: 0 auto var(--space-8); display: flex; align-items: center; gap: var(--space-5); background: linear-gradient(135deg, #1e3a5f, #0f2444); border-radius: var(--radius-xl); padding: var(--space-6); color: #fff; box-shadow: 0 8px 32px rgba(30,58,95,0.3); border: 1px solid rgba(245,158,11,0.3);">
+          <img src="data/logo.png" alt="REC Gonda Logo" style="width: 64px; height: 64px; object-fit: contain; flex-shrink: 0; border-radius: 50%; background: rgba(255,255,255,0.15); padding: 6px;">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; margin-bottom: 4px;">SIRF State Ranking 2024</div>
+            <div style="font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; line-height: 1.1;">7th in UP — 1st Among New RECs</div>
+            <div style="font-size: var(--text-sm); opacity: 0.85; margin-top: var(--space-2);">Maa Pateshwari Devi, Rajkiya Engineering College, Gonda</div>
+          </div>
+        </div>
+        <div class="card-glass fade-in" style="max-width: 700px; margin: 0 auto;">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="rank-input">Your JEE Main Rank</label>
+              <input type="number" id="rank-input" class="form-input" placeholder="e.g. 52000" min="1">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="category-select">Category</label>
+              <select id="category-select" class="form-select">
+                <option value="GEN">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="branch-select">Preferred Branch</label>
+              <select id="branch-select" class="form-select">
+                <option value="" disabled selected>Loading...</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="predict-btn" style="width: 100%; margin-top: var(--space-2);">
+            Check Chances
+          </button>
+          <div id="prediction-result" class="hidden"></div>
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="how-college-works">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// college-life</span>
+          <h2 class="section-title">How College Actually Works</h2>
+          <p class="section-subtitle">Academic calendar, class timings, and things you should know from Day 1</p>
+        </div>
+        <div id="how-college-works-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="fee-calculator">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// fees</span>
+          <h2 class="section-title">Fee & Scholarship Calculator</h2>
+          <p class="section-subtitle">See the real cost after UP Government scholarship</p>
+        </div>
+        <div class="card-glass fade-in" style="max-width: 700px; margin: 0 auto;">
+          <div class="form-group">
+            <label class="form-label" for="fee-category-select">Select Your Category</label>
+            <select id="fee-category-select" class="form-select">
+              <option value="GEN">General</option>
+              <option value="OBC">OBC</option>
+              <option value="SC">SC</option>
+              <option value="ST">ST</option>
+              <option value="EWS">EWS</option>
+            </select>
+          </div>
+          <div id="fee-breakdown"></div>
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="budget-planner">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// budget</span>
+          <h2 class="section-title">Monthly Budget Planner</h2>
+          <p class="section-subtitle">Estimate your monthly living expenses</p>
+        </div>
+        <div class="card-glass fade-in" style="max-width: 700px; margin: 0 auto;">
+          <div id="budget-list"></div>
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="fit-guide">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// fit-check</span>
+          <h2 class="section-title">Is This College Right For You?</h2>
+          <p class="section-subtitle">An honest assessment to help you decide</p>
+        </div>
+        <div class="fit-columns fade-in" id="fit-columns"></div>
+      </div>
+    </section>
+
+        <section class="section" id="campus-life">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// campus-life</span>
+          <h2 class="section-title">Campus Life: What to Expect</h2>
+          <p class="section-subtitle">Practical info and pro tips from someone who's been there</p>
+        </div>
+        <div class="grid-2 fade-in" id="campus-life-grid"></div>
+      </div>
+    </section>
+
+        <section class="section" id="branches">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// branches</span>
+          <h2 class="section-title">Branch-wise Honest Review</h2>
+          <p class="section-subtitle">What each branch is really like — labs, faculty, scope, and senior advice</p>
+        </div>
+        <div id="branch-accordion" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// gallery</span>
+          <h2 class="section-title">Campus on Video</h2>
+          <p class="section-subtitle">Real student-shot videos — see the campus before you arrive</p>
+        </div>
+        <div id="gallery-grid" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="placements">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// placement-stats</span>
+          <h2 class="section-title">Placement Records</h2>
+          <p class="section-subtitle">What to expect and how to prepare for off-campus opportunities</p>
+        </div>
+        <div id="placement-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="first-week">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// first-week</span>
+          <h2 class="section-title">First Week Survival Kit</h2>
+          <p class="section-subtitle">Everything you need to know before Day 1</p>
+        </div>
+        <div id="first-week-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="documents">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// documents</span>
+          <h2 class="section-title">Counseling Document Checklist</h2>
+          <p class="section-subtitle">Don't miss a single document — verified list with pro tips</p>
+        </div>
+        <div id="doc-checklist-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="how-to-reach">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// getting-there</span>
+          <h2 class="section-title">How to Reach + Nearby Essentials</h2>
+          <p class="section-subtitle">Routes, fares, and everything you need nearby</p>
+        </div>
+        <div id="reach-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="aktu-decoded">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// aktu-system</span>
+          <h2 class="section-title">AKTU Exam System Decoded</h2>
+          <p class="section-subtitle">How exams, marks, attendance, and CGPA actually work</p>
+        </div>
+        <div id="aktu-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="comparison">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// compare</span>
+          <h2 class="section-title">College Comparison</h2>
+          <p class="section-subtitle">Side-by-side with similar colleges to help you decide</p>
+        </div>
+        <div class="comparison-table fade-in" id="comparison-content"></div>
+      </div>
+    </section>
+
+        <section class="section" id="dates">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// dates</span>
+          <h2 class="section-title">Important Dates & Deadlines</h2>
+          <p class="section-subtitle">Don't miss any deadline — bookmark this section</p>
+        </div>
+        <div id="dates-content" class="fade-in" style="max-width: 600px; margin: 0 auto;"></div>
+      </div>
+    </section>
+
+        <section class="section" id="links">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// links</span>
+          <h2 class="section-title">Useful Links Hub</h2>
+          <p class="section-subtitle">All important links in one place — stop Googling</p>
+        </div>
+        <div id="links-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <section class="section" id="roi">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">// cost-analysis</span>
+          <h2 class="section-title">The Complete ROI Picture</h2>
+          <p class="section-subtitle">Total cost comparison — see the full financial picture before deciding</p>
+        </div>  
+        <div id="roi-content" class="fade-in"></div>
+      </div>
+    </section>
+
+        <footer class="footer">
+      <div class="container">
+        <p class="footer-credit">Built by <span>Aditya Raj</span> · CSE, 3rd Year</p>
+        <p class="footer-sub">Open source. Fork it, swap the data, make one for your college.</p>
+        <div class="footer-links">
+          <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p style="margin-top: var(--space-6); font-size: var(--text-xs); color: var(--text-muted);">
+          Disclaimer: Data is based on research and personal experience. Always verify from official sources before making decisions.
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
