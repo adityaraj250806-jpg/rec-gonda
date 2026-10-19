@@ -18,9 +18,13 @@
 
     const college = AVAILABLE_COLLEGES[0];
     try {
-      const res = await fetch(college.file);
-      if (!res.ok) throw new Error('Failed to load');
-      collegeData = await res.json();
+      if (window.REC_GONDA_DATA) {
+        collegeData = window.REC_GONDA_DATA;
+      } else {
+        const res = await fetch(college.file);
+        if (!res.ok) throw new Error('Failed to load');
+        collegeData = await res.json();
+      }
       launchGuide();
     } catch (err) {
       console.error('Failed to auto-load college data:', err);
@@ -116,57 +120,75 @@
     const container = $('#how-college-works-content');
     if (!container) return;
     const aktu = collegeData.aktuExamSystem;
+    const hw = aktu?.howCollegeWorks;
 
     container.innerHTML = `
-      <div class="grid-3" style="margin-bottom: var(--space-8);">
-        <div class="card">
-          <div class="section-tag" style="margin-bottom: var(--space-2);">Semesters</div>
-          <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-2);">8</div>
-          <div style="font-size: var(--text-sm); color: var(--text-secondary);">4 years &times; 2 semesters each</div>
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="grid-3" style="margin-bottom: var(--space-8);">
+          <div class="card">
+            <div class="section-tag" style="margin-bottom: var(--space-2);">Semesters</div>
+            <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-2);">8</div>
+            <div style="font-size: var(--text-sm); color: var(--text-secondary);">4 years &times; 2 semesters each</div>
+          </div>
+          <div class="card">
+            <div class="section-tag" style="margin-bottom: var(--space-2);">Attendance</div>
+            <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--accent-warn); margin-bottom: var(--space-2);">${aktu?.attendance?.minimum || '75%'}</div>
+            <div style="font-size: var(--text-sm); color: var(--text-secondary);">Minimum required per subject</div>
+          </div>
+          <div class="card">
+            <div class="section-tag" style="margin-bottom: var(--space-2);">Exam Split</div>
+            <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--accent-2); margin-bottom: var(--space-2);">30 + 70</div>
+            <div style="font-size: var(--text-sm); color: var(--text-secondary);">Internal + External marks</div>
+          </div>
         </div>
-        <div class="card">
-          <div class="section-tag" style="margin-bottom: var(--space-2);">Attendance</div>
-          <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--accent-warn); margin-bottom: var(--space-2);">${aktu?.attendance?.minimum || '75%'}</div>
-          <div style="font-size: var(--text-sm); color: var(--text-secondary);">Minimum required per subject</div>
-        </div>
-        <div class="card">
-          <div class="section-tag" style="margin-bottom: var(--space-2);">Exam Split</div>
-          <div style="font-size: var(--text-2xl); font-weight: 700; color: var(--accent-2); margin-bottom: var(--space-2);">30 + 70</div>
-          <div style="font-size: var(--text-sm); color: var(--text-secondary);">Internal + External marks</div>
-        </div>
-      </div>
 
-      <div class="grid-2" style="margin-bottom: var(--space-8);">
-        <div class="card">
-          <h3 style="font-size: var(--text-base); margin-bottom: var(--space-4); color: var(--accent-2);">Odd Semester</h3>
-          <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">Aug &rarr; Dec &bull; Exams: Dec &ndash; Jan</div>
+        <div class="grid-2" style="gap: var(--space-5); margin-bottom: var(--space-6);">
+          <div class="card" style="border-left: 3px solid var(--accent-blue);">
+            <div style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-2);">Academic Calendar</div>
+            <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">${hw?.academicCalendar || 'Odd: Aug–Dec (Exams: Dec–Jan) | Even: Feb–May (Exams: May–Jun)'}</div>
+          </div>
+          <div class="card" style="border-left: 3px solid var(--accent-amber);">
+            <div style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-2);">Class Timings</div>
+            <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">${hw?.classTimings || 'Usually 9:00 AM to 4:00 PM with lunch break'}</div>
+          </div>
         </div>
-        <div class="card">
-          <h3 style="font-size: var(--text-base); margin-bottom: var(--space-4); color: var(--accent-warn);">Even Semester</h3>
-          <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">Feb &rarr; May &bull; Exams: May &ndash; Jun</div>
+
+        <div class="grid-2" style="gap: var(--space-5); margin-bottom: var(--space-6);">
+          <div class="card" style="border-left: 3px solid var(--accent-danger);">
+            <h3 style="font-size: var(--text-base); margin-bottom: var(--space-3); color: var(--accent-danger);">Attendance Warning</h3>
+            <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;">
+              ${aktu?.attendance?.consequence || 'Below 75% = debarred from Class Test (CTS) for that subject'}.
+              ${aktu?.attendance?.tip || 'Track from Week 1.'}
+            </p>
+          </div>
+
+          <div class="card" style="border-left: 3px solid var(--accent-2);">
+            <h3 style="font-size: var(--text-base); margin-bottom: var(--space-3); color: var(--accent-2);">Internal Marks (30 total)</h3>
+            <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;">
+              ${aktu?.internalMarks?.breakdown || 'Based on class tests, assignments, attendance and behaviour.'}
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="card" style="border-left: 3px solid var(--accent-danger); margin-bottom: var(--space-5);">
-        <h3 style="font-size: var(--text-base); margin-bottom: var(--space-3); color: var(--accent-danger);">Attendance Warning</h3>
-        <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;">
-          ${aktu?.attendance?.consequence || 'Below 75% = debarred from Class Test (CTS) for that subject'}.
-          ${aktu?.attendance?.tip || 'Track from Week 1.'}
-        </p>
-      </div>
-
-      <div class="card" style="border-left: 3px solid var(--accent-2);">
-        <h3 style="font-size: var(--text-base); margin-bottom: var(--space-3); color: var(--accent-2);">Internal Marks (30 total)</h3>
-        <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;">
-          ${aktu?.internalMarks?.breakdown || 'Based on class tests, assignments, attendance and behaviour.'}
-        </p>
+        ${hw?.importantThings && hw.importantThings.length ? `
+        <div class="card-glass">
+          <h3 style="color: var(--accent-purple); margin-bottom: var(--space-5);">Things You Should Know from Day 1</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+            ${hw.importantThings.map(thing => `
+              <div class="checklist-item">
+                <div class="checklist-bullet" style="background: var(--accent-purple);"></div>
+                <div class="checklist-text">${thing}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>` : ''}
       </div>
     `;
   }
 
   const CATEGORY_MAP = {
     'GEN': ['OPEN', 'OPEN(GIRL)'],
-    'OBC': ['BC', 'BC(Girl)', 'EWS(OPEN)', 'EWS(GL)'],
+    'OBC': ['BC', 'BC(Girl)'],
     'SC': ['SC', 'SC(Girl)'],
     'ST': ['ST'],
     'EWS': ['EWS(OPEN)', 'EWS(GL)']
@@ -498,20 +520,26 @@
     container.innerHTML = `
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-5);">
         ${videos.map(v => `
-          <div class="card" style="padding: 0; overflow: hidden;">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
               <iframe
                 src="https://www.youtube.com/embed/${v.id}"
                 title="${v.title}"
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
               </iframe>
             </div>
-            <div style="padding: var(--space-4);">
-              <div style="font-weight: 700; font-size: var(--text-sm); color: var(--text-heading); margin-bottom: var(--space-1);">${v.title}</div>
-              <div style="font-size: var(--text-xs); color: var(--text-muted); line-height: 1.5;">${v.description}</div>
+            <div style="padding: var(--space-4); display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+              <div>
+                <div style="font-weight: 700; font-size: var(--text-sm); color: var(--text-heading); margin-bottom: var(--space-1);">${v.title}</div>
+                <div style="font-size: var(--text-xs); color: var(--text-muted); line-height: 1.5; margin-bottom: var(--space-3);">${v.description}</div>
+              </div>
+              <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; font-size: var(--text-xs); font-weight: 600; color: #ef4444; text-decoration: none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch directly on YouTube ↗
+              </a>
             </div>
           </div>
         `).join('')}
@@ -806,38 +834,6 @@
     initTabs('aktu-tabs');
   }
 
-  function renderHowCollegeWorks() {
-    const aktu = collegeData.aktuExamSystem;
-    const hw = aktu.howCollegeWorks;
-    const container = $('#how-college-works-content');
-    if (!container) return;
-
-    container.innerHTML = `
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="grid-2" style="gap: var(--space-5); margin-bottom: var(--space-6);">
-          <div class="card" style="border-left: 3px solid var(--accent-blue);">
-            <div style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-2);"> Academic Calendar</div>
-            <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">${hw.academicCalendar}</div>
-          </div>
-          <div class="card" style="border-left: 3px solid var(--accent-amber);">
-            <div style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-2);"> Class Timings</div>
-            <div style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8;">${hw.classTimings}</div>
-          </div>
-        </div>
-        <div class="card-glass">
-          <h3 style="color: var(--accent-purple); margin-bottom: var(--space-5);"> Things You Should Know</h3>
-          <div style="display: flex; flex-direction: column; gap: var(--space-3);">
-            ${hw.importantThings.map(thing => `
-              <div class="checklist-item">
-                <div class="checklist-bullet" style="background: var(--accent-purple);"></div>
-                <div class="checklist-text">${thing}</div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </div>
-    `;
-  }
 
   function renderComparison() {
     const colleges = collegeData.comparison.colleges;

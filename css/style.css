@@ -13,6 +13,11 @@
   --accent-warn: #f59e0b;       --accent-warn-dim: rgba(245, 158, 11, 0.1);
   --accent-danger: #ef4444;     --accent-danger-dim: rgba(239, 68, 68, 0.1);
   --accent-cool: #0ea5e9;       --accent-cool-dim: rgba(14, 165, 233, 0.1);
+  --accent-mint: #10b981;       --accent-mint-dim: rgba(16, 185, 129, 0.12);
+  --accent-amber: #f59e0b;      --accent-amber-dim: rgba(245, 158, 11, 0.12);
+  --accent-blue: #2563eb;       --accent-blue-dim: rgba(37, 99, 235, 0.12);
+  --accent-purple: #8b5cf6;     --accent-purple-dim: rgba(139, 92, 246, 0.12);
+  --accent-crimson: #ef4444;    --accent-crimson-dim: rgba(239, 68, 68, 0.12);
 
   --border-color: #dde3ed;      --border-hover: #b8c4d8;      --border-accent: rgba(30, 58, 95, 0.25);
 
@@ -999,12 +1004,69 @@ input[type="range"]::-moz-range-thumb {
 }
 .footer-credit {
   font-family: var(--font-heading);
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   color: var(--text-heading);
   margin-bottom: var(--space-1);
 }
-.footer-credit span { color: var(--accent); }
-.footer-sub { font-size: var(--text-sm); color: var(--text-muted); }
+.footer-credit span, .footer-credit a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.footer-credit a:hover { text-decoration: underline; }
+.footer-sub { font-size: var(--text-sm); color: var(--text-secondary); }
+.footer-creator-card {
+  max-width: 600px;
+  margin: 0 auto var(--space-6);
+  padding: var(--space-6);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+.footer-creator-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+}
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all var(--transition-fast);
+}
+.footer-btn-linkedin {
+  background: #0a66c2;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(10, 102, 194, 0.25);
+}
+.footer-btn-linkedin:hover {
+  background: #004182;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.35);
+}
+.footer-btn-github {
+  background: var(--bg-input);
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color);
+}
+.footer-btn-github:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-1px);
+}
 .footer-links {
   display: flex;
   justify-content: center;
@@ -1115,6 +1177,16 @@ input[type="range"]::-moz-range-thumb {
   --accent-danger-dim: rgba(244, 63, 94, 0.1);
   --accent-cool: #10b981;
   --accent-cool-dim: rgba(16, 185, 129, 0.1);
+  --accent-mint: #34d399;
+  --accent-mint-dim: rgba(52, 211, 153, 0.15);
+  --accent-amber: #fbbf24;
+  --accent-amber-dim: rgba(251, 191, 36, 0.15);
+  --accent-blue: #60a5fa;
+  --accent-blue-dim: rgba(96, 165, 250, 0.15);
+  --accent-purple: #a78bfa;
+  --accent-purple-dim: rgba(167, 139, 250, 0.15);
+  --accent-crimson: #f87171;
+  --accent-crimson-dim: rgba(248, 113, 113, 0.15);
 
   --border-color: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(255, 255, 255, 0.15);

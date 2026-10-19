@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://insiderec.vercel.app/sitemap.xml
+Sitemap: https://rec-gonda.vercel.app/sitemap.xml
